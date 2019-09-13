@@ -4,10 +4,11 @@ public class Arrays
 	{
 		
 		static Scanner userInput = new Scanner (System.in);
+		
 		public static void main(String[] args)
 			{
 				//numberOfSweets();
-				sumOfArray();
+				//sumOfArray();
 			}
 
 		public static void numberOfSweets()
@@ -29,12 +30,43 @@ public class Arrays
 		public static void sumOfArray()
 		{
 		System.out.println("please put in 8 number");
-		int numberArray = userInput.nextInt()+1;
-		int [] myNumberArrays= new int[numberArray];
-		for (int i= 0; i <numberArray; i++)
+		
+		
+		int [] myNumberArrays= new int[8];
+		for (int i= 0; i <8; i++)
 			{
-			numberArray [i] = userInput.nextLine();
+				myNumberArrays [i] = userInput.nextInt();
 			}
+		int sumOfOdds = 0;
+		int sumOfEven = 0;
+		for (int s : myNumberArrays  )
+		{
+		
+		
+		if( myNumberArrays[s] % 2 == 0) 
+			{
+				sumOfEven += myNumberArrays[s];
+			}
+		else 
+			{
+			sumOfOdds += myNumberArrays[s];
 		}
+			
+			
+		}
+	System.out.println(sumOfOdds);
+	System.out.println(sumOfEven);
 	
+		}
+		
+		public static void random5()
+		{
+			int [] myRandomArrays = new int[5];
+			
+			
+			
+	
+			
+		}
 	}
+		
